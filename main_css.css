@@ -58,12 +58,68 @@ body {
 
 .nav__link svg {
   color: #9da0af;
-
   width: 20px;
   height: 20px;
 }
 /* nav (left panel) END */
 
 /* aside (right panel) START  */
+.aside {
+  padding: 48px 24px 0 24px;
+  background: #222433;
+}
+
+.aside svg {
+  width: 20px;
+  height: 20px;
+}
+
+.aside__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.aside__studio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside__studio > .surface-box {
+  width: fit-content;
+  display: inline-block;
+  padding: 12px;
+}
 
 /* aside (right panel) End  */
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatar__title {
+  text-transform: capitalize;
+  margin-left: 16px;
+}
+
+.surface-box {
+  background: #292b3d;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+}
+
+.surface-box--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TODO: re-use style for svg */
+/* TODO: give font-size in rem */
+/* TODO:  create standard typography clases for re-use*/
+/* TODO: revise css classes & refactor if necessary */
