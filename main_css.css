@@ -11,7 +11,7 @@ body {
   grid-template-columns: 3fr 12fr 5fr;
 }
 
-/* left nav section START */
+/* nav (left panel) START */
 .nav {
   background: #222433;
   padding: 48px 24px;
@@ -62,5 +62,8 @@ body {
   width: 20px;
   height: 20px;
 }
+/* nav (left panel) END */
 
-/* left nav section END */
+/* aside (right panel) START  */
+
+/* aside (right panel) End  */
