@@ -74,9 +74,15 @@
           <i data-feather="chevron-down" style="margin-left: 8px"></i>
           <i
             data-feather="map-pin"
-            style="margin-left: auto; margin-right: 16px"
+            style="margin-left: auto; margin-right: 16px; color: white"
           ></i>
-          <i data-feather="bell"></i>
+          <div style="position: relative; display: inline-flex">
+            <i data-feather="bell" style="color: white"></i>
+            <div
+              class="notification_dot"
+              style="position: absolute; right: 0"
+            ></div>
+          </div>
         </div>
         <div class="surface-box surface-box--flex">
           <span>Search</span>
@@ -107,7 +113,7 @@
             <span>Bollywood</span>
           </div>
         </div>
-        <p>Popullar Movie</p>
+        <p style="color: white">Popullar Movie</p>
         <!-- Movie card -->
         <div class="movie_card">
           <!-- the image -->
@@ -155,6 +161,46 @@
               An unusual group of robbers attempt to carry-out the most perfect
               robbery in spain history
             </p>
+          </div>
+        </div>
+        <p style="margin-top: 32px; color: white">Popullar Actor</p>
+        <div style="display: flex; align-items: center">
+          <img src="./images/actor1.jpg" alt="avatar" class="avatar" />
+          <div style="margin-left: 16px">
+            <p class="actor_card__header">George clooney</p>
+            <p class="actor_card__subheader">America</p>
+          </div>
+          <div style="margin-left: auto">
+            <p style="color: var(--primary-text)" class="actor_card__header">
+              801,818,001
+            </p>
+            <p class="actor_card__subheader">Followers</p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; margin-top: 24px">
+          <img src="./images/actor2.jpg" alt="avatar" class="avatar" />
+          <div style="margin-left: 16px">
+            <p class="actor_card__header">Bradley cooper</p>
+            <p class="actor_card__subheader">Spain</p>
+          </div>
+          <div style="margin-left: auto">
+            <p style="color: var(--primary-text)" class="actor_card__header">
+              610,113,500
+            </p>
+            <p class="actor_card__subheader">Followers</p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; margin-top: 24px">
+          <img src="./images/actor3.jpg" alt="avatar" class="avatar" />
+          <div style="margin-left: 16px">
+            <p class="actor_card__header">Robert downey Jr</p>
+            <p class="actor_card__subheader">Canada</p>
+          </div>
+          <div style="margin-left: auto">
+            <p style="color: var(--primary-text)" class="actor_card__header">
+              600,010,133
+            </p>
+            <p class="actor_card__subheader">Followers</p>
           </div>
         </div>
       </div>

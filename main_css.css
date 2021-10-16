@@ -1,3 +1,10 @@
+:root {
+  --primary: #02a2ff;
+  --primary-text: #9da0af;
+  --background-color: #222433;
+  --surface-color: #292b3d;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,12 +15,12 @@ body {
 .wrapper {
   height: 100vh;
   display: grid;
-  grid-template-columns: 3fr 12fr 5fr;
+  grid-template-columns: 1fr 4fr 2fr;
 }
 
 /* nav (left panel) START */
 .nav {
-  background: #222433;
+  background: var(--background-color);
   padding: 48px 24px;
 }
 
@@ -25,11 +32,11 @@ body {
 }
 
 .nav__header > span {
-  color: rgb(56, 56, 243);
+  color: var(--primary);
 }
 
 .nav__link-header {
-  color: #9da0af;
+  color: var(--primary-text);
   margin: 32px 0 16px 8px;
   font-size: 10px;
   letter-spacing: 1.5px;
@@ -49,7 +56,7 @@ body {
 }
 
 .nav__link > span {
-  color: #9da0af;
+  color: var(--primary-text);
 
   margin-left: 16px;
   font-size: 14px;
@@ -57,7 +64,7 @@ body {
 }
 
 .nav__link svg {
-  color: #9da0af;
+  color: var(--primary-text);
   width: 20px;
   height: 20px;
 }
@@ -66,10 +73,11 @@ body {
 /* aside (right panel) START  */
 .aside {
   padding: 48px 24px 0 24px;
-  background: #222433;
+  background: var(--background-color);
 }
 
 .aside svg {
+  color: var(--primary-text);
   width: 20px;
   height: 20px;
 }
@@ -93,7 +101,7 @@ body {
 
 .movie_card {
   margin-bottom: 16px;
-  background: #292b3d;
+  background: var(--surface-color);
   display: flex;
   border-radius: 16px;
   height: 100px;
@@ -165,6 +173,7 @@ body {
 }
 
 .movie_card__detail {
+  color: var(--primary-text);
   font-size: 10px;
   margin-bottom: 0;
   display: -webkit-box;
@@ -174,6 +183,18 @@ body {
   overflow: hidden;
 }
 
+.actor_card__header {
+  margin: 0;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: white;
+}
+
+.actor_card__subheader {
+  color: var(--primary-text);
+  font-size: 10px;
+  margin: 0;
+}
 /* aside (right panel) End  */
 
 .avatar {
@@ -186,13 +207,22 @@ body {
 .avatar__title {
   text-transform: capitalize;
   margin-left: 16px;
+  color: white;
+}
+
+.notification_dot {
+  width: 8px;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 50%;
 }
 
 .surface-box {
-  background: #292b3d;
+  background: var(--surface-color);
+  color: var(--primary-text);
   border-radius: 8px;
   padding: 16px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.4px;
 }
 
