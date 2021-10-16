@@ -10,6 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="main_css.css" />
     <script src="https://unpkg.com/feather-icons"></script>
     <title>Movie Dashboard</title>
@@ -101,35 +108,57 @@
           </div>
         </div>
         <p>Popullar Movie</p>
-        <div
-          style="
-            margin-bottom: 16px;
-            background: #292b3d;
-            display: flex;
-            justify-content: space-between;
-          "
-        >
-          <div
-            style="
-              background: violet;
-              width: 104px;
-              height: 104px;
-              border-radius: 16px;
-            "
-          >
-            f
+        <!-- Movie card -->
+        <div class="movie_card">
+          <!-- the image -->
+          <div class="movie_card__image_wrapper">
+            <img
+              class="movie_card__image"
+              src="./images/godzilla-vs-kong.jpg"
+            />
+            <div class="movie_card__image_overlay">
+              <div class="movie_card__reactions">
+                <i class="fa fa-heart movie_card__fav_icon"></i>
+                <span class="movie_card__fav_num">13,860</span>
+                <i class="fa fa-star movie_card__rate_icon"></i>
+                <span class="movie_card__rate_num">8.8</span>
+              </div>
+            </div>
           </div>
-          <div style="background: #949467">
-            <p style="font-size: 12px">Godzila vs Kong</p>
-            <span style="font-size: 10px"
-              >The epic next chapter in the The epic next chapter in the The
-              epic next chapter in th</span
-            >
+          <!-- the description -->
+          <div class="movie_card__description">
+            <p class="movie_card__title">Godzila vs Kong</p>
+            <p class="movie_card__detail">
+              The epic next chapter in the cinematic Monsterverse pits two of
+              the greatest icons in motion
+            </p>
           </div>
         </div>
-        <div style="background: #292b3d">v</div>
+        <!-- Movie card -->
+        <div class="movie_card">
+          <!-- the image -->
+          <div class="movie_card__image_wrapper">
+            <img class="movie_card__image" src="./images/money-heist.jpg" />
+            <div class="movie_card__image_overlay">
+              <div class="movie_card__reactions">
+                <i class="fa fa-heart movie_card__fav_icon"></i>
+                <span class="movie_card__fav_num">10,108</span>
+                <i class="fa fa-star movie_card__rate_icon"></i>
+                <span class="movie_card__rate_num">8.1</span>
+              </div>
+            </div>
+          </div>
+          <!-- the description -->
+          <div class="movie_card__description">
+            <p class="movie_card__title">Le Casa De Papel</p>
+            <p class="movie_card__detail">
+              An unusual group of robbers attempt to carry-out the most perfect
+              robbery in spain history
+            </p>
+          </div>
+        </div>
       </div>
-      <!-- aside (right panel) START -->
+      <!-- aside (right panel) END -->
     </div>
     <script>
       feather.replace();
