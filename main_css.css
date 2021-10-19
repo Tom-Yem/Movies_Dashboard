@@ -107,6 +107,11 @@ body {
   font-size: 12px;
 }
 
+.movies_list_title {
+  font-size: 20px;
+  margin-top: 32px;
+}
+
 /* main panel(center) END */
 
 /* aside (right panel) START  */
