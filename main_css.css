@@ -140,8 +140,3 @@ body {
     grid-template-columns: 1fr 4fr;
   }
 }
-
-/* TODO: re-use style for svg */
-/* TODO: give font-size in rem */
-/* TODO:  create standard typography clases for re-use*/
-/* TODO: revise css classes & refactor if necessary */
