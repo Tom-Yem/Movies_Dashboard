@@ -49,3 +49,10 @@
   height: 20px;
   margin-left: 22px;
 }
+
+@media only screen and (max-width: 700px) {
+  /* mobile view */
+  .nav {
+    display: none;
+  }
+}
