@@ -25,6 +25,8 @@
     <title>Movie Dashboard</title>
   </head>
   <body>
+    <div style="display: absolute; background: green"></div>
+
     <div class="wrapper">
       <!-- nav(left panel) START -->
       <div class="nav">
@@ -71,14 +73,20 @@
       <div class="main_panel">
         <!-- main_panel header is hidden on big screen -->
         <div class="main_panel__header">
+          <div
+            id="drawerOpener"
+            style="
+              background: turquoise;
+              height: 24px;
+              width: 24px;
+              margin-right: 8px;
+            "
+          ></div>
           <div class="surface-box surface-box--flex" style="flex: 1">
             <span>Search</span>
             <i data-feather="search"></i>
           </div>
-          <div
-            class="aside__header"
-            style="flex: 1; margin-bottom: 0; margin-left: 32px"
-          >
+          <div class="aside_header aside_header__main_panel">
             <img src="./images/happy.jpg" alt="avatar" class="avatar" />
             <span class="avatar__title">Jhon doe</span>
             <i data-feather="chevron-down" style="margin-left: 8px"></i>
@@ -271,7 +279,7 @@
 
       <!-- aside (right panel) START -->
       <div class="aside">
-        <div class="aside__header">
+        <div class="aside_header">
           <img src="./images/happy.jpg" alt="avatar" class="avatar" />
           <span class="avatar__title">Jhon doe</span>
           <i data-feather="chevron-down" style="margin-left: 8px"></i>
@@ -409,5 +417,6 @@
     <script>
       feather.replace();
     </script>
+    <script src="./main.js"></script>
   </body>
 </html>

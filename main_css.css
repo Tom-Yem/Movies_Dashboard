@@ -45,6 +45,7 @@ body {
 .main_panel__header {
   display: none;
   margin-bottom: 16px;
+  align-items: center;
 }
 
 .disc_movie {
@@ -190,6 +191,10 @@ body {
   .wrapper {
     grid-template-columns: 1fr;
   }
+  .main_panel {
+    padding: 24px 16px;
+  }
+
   .Highlights_content_wrapper {
     flex-direction: column;
   }

@@ -25,10 +25,16 @@
   height: 20px;
 }
 
-.aside__header {
+.aside_header {
   display: flex;
   align-items: center;
   margin-bottom: 48px;
+}
+
+.aside_header__main_panel {
+  flex: 1;
+  margin-bottom: 0;
+  margin-left: 32px;
 }
 
 .aside__studio {
@@ -124,5 +130,16 @@
 @media only screen and (max-width: 1100px) {
   .aside {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* mobile view */
+  .aside_header__main_panel :not(img) {
+    display: none;
+  }
+  .aside_header__main_panel {
+    flex: none;
+    margin-left: 16px;
   }
 }
