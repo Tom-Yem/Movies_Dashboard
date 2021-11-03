@@ -42,6 +42,11 @@ body {
   transition-delay: 2s;
 }
 
+.main_panel__header {
+  display: none;
+  margin-bottom: 16px;
+}
+
 .disc_movie {
   position: relative;
   border-radius: 16px;
@@ -78,6 +83,16 @@ body {
   margin-top: 32px;
 }
 
+.Highlights {
+  display: none;
+}
+
+.Highlights__title {
+  color: var(--primary-text);
+  font-size: 10px;
+}
+
+/* re-usables */
 .avatar {
   width: 40px;
   height: 40px;
@@ -132,11 +147,29 @@ body {
   align-items: flex-end;
 }
 
-@media only screen and (max-width: 1132px) {
+.divider {
+  height: 5px;
+  width: 100%;
+  background: var(--surface-color);
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 1100px) {
+  /* tablet view */
   .aside {
     visibility: hidden;
   }
   .wrapper {
     grid-template-columns: 1fr 4fr;
   }
+  .main_panel__header {
+    display: flex;
+  }
+  .Highlights {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* mobile view */
 }

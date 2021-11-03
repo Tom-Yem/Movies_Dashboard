@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins"
@@ -16,11 +16,11 @@
       integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    /> -->
     <link rel="stylesheet" href="main_css.css" />
     <link rel="stylesheet" href="aside.css" />
     <link rel="stylesheet" href="nav.css" />
-    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
 
     <title>Movie Dashboard</title>
   </head>
@@ -69,6 +69,33 @@
 
       <!-- main panel(center) START -->
       <div class="main_panel">
+        <!-- main_panel header is hidden on big screen -->
+        <div class="main_panel__header">
+          <div class="surface-box surface-box--flex" style="flex: 1">
+            <span>Search</span>
+            <i data-feather="search"></i>
+          </div>
+          <div
+            class="aside__header"
+            style="flex: 1; margin-bottom: 0; margin-left: 32px"
+          >
+            <img src="./images/happy.jpg" alt="avatar" class="avatar" />
+            <span class="avatar__title">Jhon doe</span>
+            <i data-feather="chevron-down" style="margin-left: 8px"></i>
+            <i
+              data-feather="map-pin"
+              style="margin-left: auto; margin-right: 16px; color: white"
+            ></i>
+            <div style="position: relative; display: inline-flex">
+              <i data-feather="bell" style="color: white"></i>
+              <div
+                class="notification_dot"
+                style="position: absolute; right: 0"
+              ></div>
+            </div>
+          </div>
+        </div>
+
         <p style="font-size: 28px; margin: 0 0 16px 0">Discovers</p>
         <div style="display: flex">
           <div class="disc_movie disc_movie--bg">
@@ -152,6 +179,115 @@
           </div>
           <div style="flex: 1">
             <img src="./images/pacific_rim.jpg" alt="rise_up" class="poster" />
+          </div>
+        </div>
+
+        <!-- hidden on big screen -->
+        <div class="Highlights">
+          <div class="divider"></div>
+          <span class="Highlights__title">Highlights</span>
+          <div style="display: flex">
+            <div style="flex: 1">
+              <p style="color: white">Popullar Movie</p>
+              <!-- Movie card -->
+              <div class="movie_card">
+                <!-- the image -->
+                <div class="movie_card__image_wrapper">
+                  <img class="poster" src="./images/godzilla-vs-kong.jpg" />
+                  <div class="poster_overlay">
+                    <div class="movie_card__reactions">
+                      <i class="fa fa-heart movie_card__fav_icon"></i>
+                      <span class="movie_card__fav_num">13,860</span>
+                      <i class="fa fa-star movie_card__rate_icon"></i>
+                      <span class="movie_card__rate_num">8.8</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- the description -->
+                <div class="movie_card__description">
+                  <p class="movie_card__title">Godzila vs Kong</p>
+                  <p class="movie_card__detail">
+                    The epic next chapter in the cinematic Monsterverse pits two
+                    of the greatest icons in motion
+                  </p>
+                </div>
+              </div>
+              <!-- Movie card -->
+              <div class="movie_card">
+                <!-- the image -->
+                <div class="movie_card__image_wrapper">
+                  <img class="poster" src="./images/money-heist.jpg" />
+                  <div class="poster_overlay">
+                    <div class="movie_card__reactions">
+                      <i class="fa fa-heart movie_card__fav_icon"></i>
+                      <span class="movie_card__fav_num">10,108</span>
+                      <i class="fa fa-star movie_card__rate_icon"></i>
+                      <span class="movie_card__rate_num">8.1</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- the description -->
+                <div class="movie_card__description">
+                  <p class="movie_card__title">Le Casa De Papel</p>
+                  <p class="movie_card__detail">
+                    An unusual group of robbers attempt to carry-out the most
+                    perfect robbery in spain history
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div style="flex: 1; margin-left: 32px">
+              <p style="color: white">Popullar Actor</p>
+              <div style="display: flex; align-items: center">
+                <img src="./images/actor1.jpg" alt="avatar" class="avatar" />
+                <div style="margin-left: 16px">
+                  <p class="actor_card__header">George clooney</p>
+                  <p class="actor_card__subheader">America</p>
+                </div>
+                <div style="margin-left: auto">
+                  <p
+                    style="color: var(--primary-text)"
+                    class="actor_card__header"
+                  >
+                    801,818,001
+                  </p>
+                  <p class="actor_card__subheader">Followers</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; margin-top: 24px">
+                <img src="./images/actor2.jpg" alt="avatar" class="avatar" />
+                <div style="margin-left: 16px">
+                  <p class="actor_card__header">Bradley cooper</p>
+                  <p class="actor_card__subheader">Spain</p>
+                </div>
+                <div style="margin-left: auto">
+                  <p
+                    style="color: var(--primary-text)"
+                    class="actor_card__header"
+                  >
+                    610,113,500
+                  </p>
+                  <p class="actor_card__subheader">Followers</p>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; margin-top: 24px">
+                <img src="./images/actor3.jpg" alt="avatar" class="avatar" />
+                <div style="margin-left: 16px">
+                  <p class="actor_card__header">Robert downey Jr</p>
+                  <p class="actor_card__subheader">Canada</p>
+                </div>
+                <div style="margin-left: auto">
+                  <p
+                    style="color: var(--primary-text)"
+                    class="actor_card__header"
+                  >
+                    600,010,133
+                  </p>
+                  <p class="actor_card__subheader">Followers</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
