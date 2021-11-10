@@ -48,6 +48,14 @@ body {
   align-items: center;
 }
 
+.drawer_btn {
+  display: none;
+  background: turquoise;
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+}
+
 .disc_movie {
   position: relative;
   border-radius: 16px;
@@ -173,6 +181,21 @@ body {
   margin-top: 40px;
 }
 
+/* .slider {
+  animation-name: slide;
+  animation-timing-function: ease-out;
+  background-color: violet;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+} */
+
 @media only screen and (max-width: 1100px) {
   /* tablet view */
   .wrapper {
@@ -183,6 +206,9 @@ body {
   }
   .Highlights {
     display: block;
+  }
+  .hide_md {
+    display: none;
   }
 }
 
@@ -205,5 +231,11 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+  }
+  .hide_sm {
+    display: none;
+  }
+  .show_sm {
+    display: block;
   }
 }

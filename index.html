@@ -25,11 +25,9 @@
     <title>Movie Dashboard</title>
   </head>
   <body>
-    <div style="display: absolute; background: green"></div>
-
     <div class="wrapper">
       <!-- nav(left panel) START -->
-      <div class="nav">
+      <div class="nav hide_sm">
         <p class="nav__header"><span>Mov</span>.time</p>
         <p class="nav__link-header">Menu</p>
         <div class="nav__link">
@@ -73,15 +71,7 @@
       <div class="main_panel">
         <!-- main_panel header is hidden on big screen -->
         <div class="main_panel__header">
-          <div
-            id="drawerOpener"
-            style="
-              background: turquoise;
-              height: 24px;
-              width: 24px;
-              margin-right: 8px;
-            "
-          ></div>
+          <div id="drawerOpener" class="drawer_btn show_sm"></div>
           <div class="surface-box surface-box--flex" style="flex: 1">
             <span>Search</span>
             <i data-feather="search"></i>
@@ -413,6 +403,57 @@
         </div>
       </div>
       <!-- aside (right panel) END -->
+    </div>
+    <div
+      id="drawerSurface"
+      style="
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 0;
+        background: rgb(0 0 0 / 50%);
+        height: 100vh;
+        width: 100%;
+      "
+    >
+      <div class="nav" style="width: 70%">
+        <p class="nav__header"><span>Mov</span>.time</p>
+        <p class="nav__link-header">Menu</p>
+        <div class="nav__link">
+          <i data-feather="home"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav__link">
+          <i data-feather="heart"></i>
+          <span>Favorite</span>
+        </div>
+        <div class="nav__link">
+          <i data-feather="shopping-bag"></i>
+          <span>Purchase</span>
+        </div>
+        <div class="nav__link">
+          <i data-feather="clock"></i>
+          <span>Reminder</span>
+        </div>
+
+        <p class="nav__link-header">Other</p>
+        <div class="nav__link">
+          <i data-feather="file-text"></i>
+          <span>Playlist</span>
+        </div>
+        <div class="nav__link">
+          <i data-feather="play-circle"></i>
+          <span>Live</span>
+        </div>
+        <div class="nav__link">
+          <i data-feather="bookmark"></i>
+          <span>Bookmarks</span>
+        </div>
+        <div class="nav__link">
+          <i data-feather="settings"></i>
+          <span>Settings</span>
+        </div>
+      </div>
     </div>
     <script>
       feather.replace();
