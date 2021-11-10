@@ -40,6 +40,8 @@
 .aside__studio {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .aside__studio > .surface-box {
