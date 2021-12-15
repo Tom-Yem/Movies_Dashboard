@@ -1,14 +1,16 @@
 let drawerSurface = document.getElementById("drawerSurface");
 let drawer = document.getElementById("drawer");
 
-drawerOpener.onclick = () => {
-  let drawerSurface = document.getElementById("drawerSurface");
-  drawerSurface.style.display = "block";
+drawerOpener.onclick = (e) => {
+  drawerSurface.style.width = "100%";
+  drawerSurface.style.opacity = "1";
+  drawer.style.transform = "translateX(0%)";
 };
 
-drawerSurface.onclick = () => (drawerSurface.style.display = "none");
+drawer.onclick = (e) => e.stopPropagation();
 
-//TODO: stop event propagation on drawer
-//TODO: make slidable animation
-//TODO: take care of drawer width on landscape view
-//TODO: check nav scrollability on drawer
+drawerSurface.onclick = (e) => {
+  drawerSurface.style.width = "0";
+  drawerSurface.style.opacity = "0";
+  drawer.style.transform = "translateX(-100%)";
+};
