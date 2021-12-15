@@ -3,6 +3,21 @@
   padding: 48px 24px 48px 0;
 }
 
+#drawer::-webkit-scrollbar {
+  width: 4px;
+}
+
+#drawer::-webkit-scrollbar-thumb {
+  background: var(--scroll-thumb-color);
+  border-radius: 8px;
+}
+
+#drawer::-webkit-scrollbar-track {
+  border-radius: 8px;
+  transition-property: all;
+  transition-delay: 2s;
+}
+
 .nav__header {
   padding: 0 0 16px 32px;
   margin: 0;
