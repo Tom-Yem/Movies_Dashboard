@@ -233,6 +233,9 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
   }
+  .movie_detail {
+    margin: 0 8px 8px;
+  }
   .hide_sm {
     display: none;
   }
