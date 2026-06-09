@@ -1,5 +1,5 @@
 ### Movie Dashboard
-A Movie Dashboard made with HTML and CSS
+A responsive modern Movie Dashboard website made entirely with just HTML and CSS
 
 ![Main view](./images/screen1.png)
 
