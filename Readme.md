@@ -9,7 +9,3 @@ A responsive modern Movie Dashboard website made entirely with just HTML and CSS
 </p>
 <br/>
 
-## Features 
-
-> Desktop view designed by [Aldo Dwiyan](https://dribbble.com/Aldo_Dwiyan) on [Dribble](https://dribbble.com)
-
